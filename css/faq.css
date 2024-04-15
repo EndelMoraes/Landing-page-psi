@@ -26,3 +26,8 @@
     border-right: #79e2f5 2px solid;
 }
 
+@media(max-width: 700px){
+    .faq-div{
+        gap: 10px;
+    }
+}

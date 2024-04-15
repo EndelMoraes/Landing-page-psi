@@ -18,7 +18,7 @@ footer {
 
 
 
-.rodape .footer-content ul li a {
+.rodape  ul li a {
     display: flex; /* Utiliza flexbox para alinhar os itens verticalmente */
     align-items: center; /* Alinha os itens verticalmente */
     text-decoration: none; /* Remove sublinhado padrão do link */
@@ -56,7 +56,7 @@ footer {
 }
 
 .footer-content ul {
-    list-style-type: none;
+    list-style-type: none;  
 }
 
 
@@ -72,6 +72,10 @@ footer {
 }
 
 @media(max-width: 700px){
+    ul{
+        
+        margin: 0px;
+    }
     .footer-content p{
         
         font-size: 38px;
@@ -91,5 +95,10 @@ footer {
     }
     .frase p{
         font-size: 24px;
+    }
+
+    .footer-content ul{
+        margin: 0; /* Remova a margem padrão */
+        padding: 0; /* Remova o preenchimento padrão */
     }
 }
