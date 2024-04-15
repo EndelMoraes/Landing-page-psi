@@ -104,7 +104,12 @@
             .lista-top a{
                 font-size: 14px;
                 text-align: left;
-                
-
+            }
+        }
+        @media(max-width: 445px){
+            .lista-top a{
+                font-size: 13px;
+                text-align: left;
+                padding-right: 4px;
             }
         }
