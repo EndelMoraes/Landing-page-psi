@@ -87,7 +87,7 @@
 
         }
 
-        @media(max-width: 480px){
+        @media(max-width: 552px){
             #branding {
                 display: none;
             }
@@ -99,7 +99,7 @@
             .lista-top li{
                 margin: 1px ;
                 padding: 5px;
-                padding-right: 20px;
+                padding-right: 15px;
             }
             .lista-top a{
                 font-size: 14px;
