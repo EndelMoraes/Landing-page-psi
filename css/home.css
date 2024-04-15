@@ -84,7 +84,27 @@
             .lista-top a{
                 font-size: 15px;
             }
-            .container h1{
-                font-size: 27px;
+
+        }
+
+        @media(max-width: 480px){
+            #branding {
+                display: none;
+            }
+            .lista-top ul{
+                margin: 0; /* Remova a margem padrão */
+                padding: 0; /* Remova o preenchimento padrão */
+                
+            }
+            .lista-top li{
+                margin: 1px ;
+                padding: 5px;
+                padding-right: 20px;
+            }
+            .lista-top a{
+                font-size: 14px;
+                text-align: left;
+                
+
             }
         }
