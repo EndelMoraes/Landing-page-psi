@@ -2,6 +2,11 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    min-height: 100px;
+    overflow: hidden;
+}
+footer p{
+    overflow-wrap: break-word;
 }
 
 .rodape {
@@ -57,11 +62,16 @@ footer {
     list-style-type: none;
 }
 
+.consulta-aberta p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
 
 .frase {
     font-style: italic;
     color: rgb(103, 104, 104);
     grid-column: 1 / span 2; /* Define a largura da coluna para ocupar as duas colunas */
+    overflow-wrap: break-word;
 }
 
 #footer a:hover{
@@ -74,8 +84,86 @@ footer {
         
         font-size: 38px;
     }
+    
     .frase p{
         font-size: 28px;
     }
+    ul{
+        gap: 0px;
+    }
+ 
+}
+@media(max-width: 490px){
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.rodape {
+    max-width: 100%; /* Alterado para 100% */
+    padding: 100px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Reduzido o espaçamento entre as colunas */
+    align-items: center;
+}
+
+.rodape .footer-content ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+
+.rodape .footer-content ul li img.whats {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.footer-content {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-column: span 1; /* Alterado para ocupar apenas uma coluna */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 50px;
+    word-wrap: break-word;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul {
+    list-style-type: none;
+}
+
+.frase {
+    font-style: italic;
+    color: rgb(103, 104, 104);
+    grid-column: span 1; /* Alterado para ocupar apenas uma coluna */
+}
+
+#footer a:hover {
+    color: #79e2f5;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .footer-content p {
+        font-size: 38px;
+    }
+    .frase p {
+        font-size: 28px;
+    }
+}
 
 }
