@@ -1,3 +1,5 @@
+
+
 .info {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -5,6 +7,7 @@
 }
 
 .info img {
+    
     max-width: 100%;
     margin: 0; /* Remover qualquer margem */
     
@@ -25,4 +28,18 @@
 
 .perfil {
     margin: 0; /* Remover qualquer margem */
+}
+
+
+@media(max-width: 700px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 5px;
+    }
+    .perfil {
+        display: flex;
+        align-items: start;
+        margin-top: 71px;
+    }
 }

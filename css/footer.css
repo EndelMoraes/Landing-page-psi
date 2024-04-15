@@ -68,3 +68,14 @@ footer {
     color: #79e2f5;
     font-weight: bold;
 }
+
+@media(max-width: 700px){
+    .footer-content p{
+        
+        font-size: 38px;
+    }
+    .frase p{
+        font-size: 28px;
+    }
+
+}

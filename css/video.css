@@ -42,3 +42,11 @@
     border-bottom: #79e2f5 2px solid;
     color: #faf9f9;
 }
+
+
+@media(max-width: 700px){
+    .video-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
