@@ -1,0 +1,70 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.rodape {
+    max-width: 1200px;
+    padding: 100px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+
+
+.rodape .footer-content ul li a {
+    display: flex; /* Utiliza flexbox para alinhar os itens verticalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    text-decoration: none; /* Remove sublinhado padrão do link */
+    gap: 3px;
+    margin-bottom: 15px ;
+    max-width: 200px; /* Defina o tamanho máximo que deseja para os links */
+    overflow: hidden; /* Evita que os links ultrapassem o tamanho máximo definido */
+    white-space: nowrap; /* Impede que os links quebrem em várias linhas */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao final dos links que ultrapassam o tamanho máximo */
+}
+
+.rodape .footer-content ul li  img.whats {
+    width: 24px; /* Ajusta o tamanho do ícone conforme necessário */
+    height: 24px; /* Ajusta o tamanho do ícone conforme necessário */
+    margin-right: 5px; /* Adiciona margem à direita do ícone */
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espaçamento entre as colunas */
+    align-items: center;
+    grid-column: span 2; /* Ocupa duas colunas */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 50px;
+    word-wrap: break-word;
+}
+
+.footer-content a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul {
+    list-style-type: none;
+}
+
+
+.frase {
+    font-style: italic;
+    color: rgb(103, 104, 104);
+    grid-column: 1 / span 2; /* Define a largura da coluna para ocupar as duas colunas */
+}
+
+#footer a:hover{
+    color: #79e2f5;
+    font-weight: bold;
+}

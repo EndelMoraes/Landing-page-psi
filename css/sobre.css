@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.section {
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#sobre {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.section {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#history {
+    background-color: #a8dadc;
+}
+#education {
+    background-color: #457b9d;
+    color: white;
+}
+#approach {
+    background-color: #1d3557;
+    color: white;
+}
+
+
+@media(max-width: 600px){
+    #sobre{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
