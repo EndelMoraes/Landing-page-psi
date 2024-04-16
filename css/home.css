@@ -1,115 +1,126 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50a8a0;
-            color: white;
-            padding-top: 15px;
-            min-height: 50px;
-            border-bottom: #79e2f5 2px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background: #50a8a0;
+    color: white;
+    padding-top: 15px;
+    min-height: 50px;
+    border-bottom: #79e2f5 2px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+nav a{
+    align-items: center;
+}
+
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #f1f7f8;
+    font-weight: bold;
+}
+header a:hover {
+    color: #79e2f5;
+    font-weight: bold;
+}
+
+#nav{
+    margin-bottom: 80px;
+}
+
+
+#detalhe{
+    margin-top: 90px;
+    background-color: #50a8a0;
+    text-align: center;
+    
+}
+#detalhe h1{
+    font-weight: 300;
+    color: #faf9f9;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: #79e2f5 2px solid;
+}
+
+@media(max-width: 666px){
+    .lista-top a{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 552px){
+    #branding {
+        display: none;
+    }
+    .lista-top ul{
+        margin: 0; /* Remova a margem padrão */
+        padding: 0; /* Remova o preenchimento padrão */
         
-        nav a{
-            align-items: center;
-        }
+    }
+    .lista-top li{
+        margin: 1px ;
+        padding: 5px;
+        padding-right: 15px;
+    }
+    .lista-top a{
+        font-size: 14px;
+        text-align: left;
+    }
+}
+@media(max-width: 445px){
+    .lista-top a{
+        font-size: 13px;
+        text-align: left;
+        padding-right: 4px;
+    }
+}
+@media(max-width: 370px){
+    .lista-top a{
+        font-size: 11px;
+    }
+    .lista-top li{
+        margin: 1px ;
+        padding: 1px;
+        padding-right: 10px;
+    }
 
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #f1f7f8;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #79e2f5;
-            font-weight: bold;
-        }
-
-        #nav{
-            margin-bottom: 80px;
-        }
-
-
-        #detalhe{
-            margin-top: 90px;
-            background-color: #50a8a0;
-            text-align: center;
-            
-        }
-        #detalhe h1{
-            font-weight: 300;
-            color: #faf9f9;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            border-bottom: #79e2f5 2px solid;
-        }
-
-        @media(max-width: 666px){
-            .lista-top a{
-                font-size: 15px;
-            }
-
-        }
-
-        @media(max-width: 552px){
-            #branding {
-                display: none;
-            }
-            .lista-top ul{
-                margin: 0; /* Remova a margem padrão */
-                padding: 0; /* Remova o preenchimento padrão */
-                
-            }
-            .lista-top li{
-                margin: 1px ;
-                padding: 5px;
-                padding-right: 15px;
-            }
-            .lista-top a{
-                font-size: 14px;
-                text-align: left;
-            }
-        }
-        @media(max-width: 445px){
-            .lista-top a{
-                font-size: 13px;
-                text-align: left;
-                padding-right: 4px;
-            }
-        }
+}

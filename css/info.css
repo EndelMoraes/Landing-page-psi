@@ -1,5 +1,3 @@
-
-
 .info {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -41,5 +39,33 @@
         display: flex;
         align-items: start;
         margin-top: 71px;
+    }
+
+}
+@media (max-width: 600px) {
+    .info {
+        display: flex; /* Altera o layout para flexbox */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        margin-left: 5px;
+        
+    }
+
+    .perfil {
+        float: none; /* Remove o float da imagem */
+        margin-right: 0; /* Remove a margem direita da imagem */
+    }
+
+
+    .lista {
+        overflow: hidden; /* Limpa o float da imagem */
+    }
+
+    .lista ul {
+        padding-left: 0; /* Remove o recuo à esquerda */
+        list-style-type: none; /* Remove os marcadores */
+    }
+
+    .lista li {
+        margin-bottom: 5px; /* Reduz a margem inferior dos itens da lista */
     }
 }
