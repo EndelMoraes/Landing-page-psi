@@ -1,12 +1,5 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+
 
 .container {
     width: 90%;
@@ -14,16 +7,15 @@ body {
     overflow: hidden;
 }
 header {
-    background: #50a8a0;
+    background: #222;
     color: white;
     padding-top: 15px;
     min-height: 50px;
-    border-bottom: #79e2f5 2px solid;
+    border-bottom: #444 2px solid;
 }
-header a {
-    color: #ffffff;
+header a,.lista-top a {
+    color: #fff;
     text-decoration: none;
-    
     font-size: 16px;
 }
 header ul {
@@ -56,10 +48,29 @@ header .highlight, header .current a {
     color: #f1f7f8;
     font-weight: bold;
 }
-header a:hover {
-    color: #79e2f5;
-    font-weight: bold;
+.lista-top a {
+    position: relative; /* Adiciona posição relativa para os links */
+    color: #fff; /* Cor do texto padrão */
+    text-decoration: none; /* Remove o sublinhado padrão */
 }
+
+.lista-top a::after {
+    content: ''; /* Adiciona um conteúdo vazio para o pseudo-elemento */
+    display: block; /* Exibe o pseudo-elemento como um bloco */
+    width: 0; /* Inicialmente, a largura da linha é zero */
+    height: 3px; /* Define a altura da linha */
+    background-color: #444; /* Define a cor da linha */
+    position: absolute; /* Posiciona absolutamente em relação ao link */
+    bottom: -2px; /* Posiciona 2 pixels abaixo do link */
+    left: 0; /* Alinha à esquerda */
+    transition: width 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+    transform-origin: left; /* Define a origem da transformação como a esquerda */
+}
+
+.lista-top a:hover::after {
+    width: 100%; /* Quando o mouse passar por cima, a largura da linha se torna 100% */
+}
+
 
 #nav{
     margin-bottom: 80px;
@@ -68,16 +79,16 @@ header a:hover {
 
 #detalhe{
     margin-top: 90px;
-    background-color: #50a8a0;
+    background-color: #222;
     text-align: center;
     
 }
 #detalhe h1{
     font-weight: 300;
-    color: #faf9f9;
+    color: #fff;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: #79e2f5 2px solid;
+    border-bottom: #444 2px solid;
 }
 
 @media(max-width: 666px){

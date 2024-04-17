@@ -27,15 +27,15 @@ body {
 }
 
 #history {
-    background-color: #a8dadc;
+    background-color: #444;
 }
 #education {
-    background-color: #457b9d;
-    color: white;
+    background-color: #222;
+    color: #fff;
 }
 #approach {
-    background-color: #1d3557;
-    color: white;
+    background-color: #111;
+    color: #fff;
 }
 
 
