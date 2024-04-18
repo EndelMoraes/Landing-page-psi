@@ -47,6 +47,10 @@
 
 }
 @media (max-width: 600px) {
+    .perfil img{
+        max-width: 60%;
+        height: auto;
+    }
     .info {
         display: flex; /* Altera o layout para flexbox */
         flex-direction: column; /* Alinha os itens verticalmente */
@@ -73,13 +77,19 @@
         margin-bottom: 5px; /* Reduz a margem inferior dos itens da lista */
     }
 }
-@media(min-width:1215px ){
+
+@media(min-width:1460px ){
+    .lista{
+        display: flex;
+        justify-content:flex-end;
+    }
     .perfil{
         display: flex;
-        justify-content: end;
+        justify-content: right;
+        align-items:center;
     }
     .perfil img{
-        max-width: 60%;
-        height: auto;
+        max-width: 70%;
+        max-height: 70%;
     }
 }
