@@ -99,7 +99,7 @@ header .highlight, header .current a {
 }
 
 @media(max-width: 552px){
-    #branding {
+    #logo {
         display: none;
     }
     .lista-top ul{
@@ -119,12 +119,12 @@ header .highlight, header .current a {
 }
 @media(max-width: 445px){
     .lista-top a{
-        font-size: 13px;
+        font-size: 12px;
         text-align: left;
         padding-right: 4px;
     }
 }
-@media(max-width: 370px){
+@media(max-width: 414px){
     .lista-top a{
         font-size: 11px;
     }
@@ -134,4 +134,30 @@ header .highlight, header .current a {
         padding-right: 10px;
     }
 
+}
+
+@media (max-width: 360px) {
+    .lista-top ul {
+        display: none; /* Oculta a lista quando a largura da tela for menor que 320px */
+    }
+
+    #branding {
+        font-family:cursive, sans-serif;
+        font-size: 18px;
+        display: flex; /* Usa flexbox para centralizar o texto */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        text-align: center; /* Alinha o texto ao centro */
+        width: 100%; /* Define a largura total */
+        position: absolute; /* Posiciona o texto absolutamente */
+        left: 0; /* Ajusta a posição horizontalmente para o início do container */
+        transform: translateY(-30%); /* Corrige o posicionamento vertical */
+        
+    }
+}
+
+@media (min-width: 361px) {
+    #branding {
+        display: none; /* Oculta o texto "brenda_ly" quando a largura da tela for maior que 320px */
+    }
 }
