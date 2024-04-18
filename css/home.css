@@ -96,6 +96,12 @@ header .highlight, header .current a {
 }
 
 @media(max-width: 552px){
+    .container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
     #logo {
         display: none;
     }
@@ -107,23 +113,24 @@ header .highlight, header .current a {
     .lista-top li{
         margin: 1px ;
         padding: 5px;
-        padding-right: 15px;
     }
     .lista-top a{
-        font-size: 14px;
-        text-align: left;
+        font-size: 16px;
+        text-align: center;
     }
 }
 @media(max-width: 445px){
     .lista-top a{
-        font-size: 12px;
-        text-align: left;
-        padding-right: 4px;
+        font-size: 13px;
     }
 }
 @media(max-width: 414px){
+    .lista-top ul{
+        justify-content: center;
+        align-items: center;
+    }
     .lista-top a{
-        font-size: 11px;
+        font-size: 12px;
     }
     .lista-top li{
         margin: 1px ;
