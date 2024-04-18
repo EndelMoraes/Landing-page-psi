@@ -27,6 +27,10 @@
 .perfil {
     margin: 0; /* Remover qualquer margem */
 }
+.perfil img{
+    max-width: 100%;
+    height: auto;
+}
 
 
 @media(max-width: 700px){
@@ -67,5 +71,15 @@
 
     .lista li {
         margin-bottom: 5px; /* Reduz a margem inferior dos itens da lista */
+    }
+}
+@media(min-width:1215px ){
+    .perfil{
+        display: flex;
+        justify-content: end;
+    }
+    .perfil img{
+        max-width: 60%;
+        height: auto;
     }
 }
