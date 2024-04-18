@@ -48,7 +48,7 @@
 }
 @media (max-width: 600px) {
     .perfil img{
-        max-width: 60%;
+        max-width: 100%;
         height: auto;
     }
     .info {
